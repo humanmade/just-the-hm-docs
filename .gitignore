@@ -1,9 +1,20 @@
-*.gem
-.bundle
-.ruby-version
-.jekyll-cache
-.sass-cache
-_site
-Gemfile.lock
-node_modules
+# Local files
 .DS_Store
+.env
+.history
+*.log
+.env*.local
+
+# Vendor
+.ruby-version
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+node_modules/
+vendor/
+
+# Built files
+*.gem
+Gemfile.lock
+.bundle/
+_site/
