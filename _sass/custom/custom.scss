@@ -1,4 +1,11 @@
 // stylelint-disable scss/at-extend-no-missing-placeholder
+// Just the HM Docs dependencies
+@import 'card';
+
+// Just the HM Docs styles
+@import 'hm-branding';
+@import 'announcement';
+@import 'feature';
 
 // Overrides
 code {

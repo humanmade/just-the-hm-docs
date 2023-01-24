@@ -1,0 +1,121 @@
+html {
+	font-size: $font-size-5 !important;
+}
+
+input::placeholder,
+.search-label .search-icon {
+	color: $link-color;
+}
+
+a:not([class]) {
+	text-decoration-color: $link-color;
+}
+
+input::placeholder {
+	@include fs-4;
+}
+
+.site-title:hover,
+.site-button:hover {
+	background: $sidebar-color;
+}
+
+.site-header,
+.main-header,
+.side-bar {
+	border-color: $border-color-lt;
+}
+
+.side-bar {
+	background-color: $white;
+}
+
+.site-title,
+.nav-list .nav-list-item .nav-list-link,
+.site-footer {
+	@media (min-width: 50rem) {
+		padding-left: $gutter-spacing-sm;
+	}
+}
+
+.site-title {
+	@media (min-width: 50rem) {
+		font-size: rem( 21px ) !important;
+		padding-bottom: $gutter-spacing-sm;
+		padding-top: $gutter-spacing-sm;
+	}
+}
+
+.site-logo {
+	align-items: center;
+	display: flex;
+	font-weight: 700;
+
+	&::after {
+		content: "Documentation";
+		padding-left: rem( 62px );
+
+		@media (min-width: 50rem) {
+			padding-left: rem( 53px );
+		}
+	}
+}
+
+.site-nav {
+	margin-bottom: $gutter-spacing-sm;
+}
+
+.nav-list .nav-list-item {
+	font-size: $font-size-5 !important;
+
+	.nav-list-expander,
+	.nav-list-link {
+		color: $nav-child-link-color;
+
+		&:hover,
+		&.active {
+			background: $sidebar-color;
+		}
+	}
+
+	.nav-list-link {
+		text-decoration: underline;
+		text-underline-offset: rem( 3px );
+
+		&:hover,
+		&.active {
+			color: $link-color;
+			text-decoration: underline;
+		}
+
+		&.active {
+			font-weight: 700;
+		}
+	}
+}
+
+.search {
+	padding: $gutter-spacing-sm;
+	padding-bottom: 0;
+
+	@media (min-width: 50rem) {
+		padding: 0;
+	}
+}
+
+.search-input {
+	padding-left: #{$gutter-spacing-sm + $sp-6};
+
+	@media (min-width: 50rem) {
+		padding-left: #{$gutter-spacing + $sp-6};
+	}
+}
+
+.search-label .search-icon {
+	height: rem( 22px );
+	width: rem( 22px );
+}
+
+.aux-nav {
+	@include fs-4;
+}
