@@ -1,0 +1,20 @@
+// HM colors.
+$hm-blue: #4668DF;
+$hm-navy-100: #F7FAFF;
+$hm-navy-200: #E4EFFF;
+$hm-navy-300: #D2E4FF;
+$hm-navy-1000: #203657;
+$hm-white: #fff;
+
+// Override theme variables.
+$border-color: $hm-navy-300;
+$border-color-lt: $hm-navy-200;
+$content-width: 915px;
+$gutter-spacing: $sp-7;
+$header-height: 70px;
+$link-color: $hm-blue;
+$nav-child-link-color: $hm-navy-1000;
+$nav-list-item-height: $spacing-unit * 3.2;
+$nav-list-item-height-sm: $spacing-unit * 3.2;
+$nav-width: 276px;
+$sidebar-color: $hm-navy-100;
