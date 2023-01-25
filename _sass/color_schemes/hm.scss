@@ -6,15 +6,22 @@ $hm-navy-300: #D2E4FF;
 $hm-navy-1000: #203657;
 $hm-white: #fff;
 
-// Override theme variables.
+// Override theme colors.
+$base-button-color: $hm-white;
+$body-text-color: $hm-navy-1000;
+$body-heading-color: $hm-navy-1000;
 $border-color: $hm-navy-300;
 $border-color-lt: $hm-navy-200;
+$btn-primary-color: $hm-blue;
+$link-color: $hm-blue;
+$nav-child-link-color: $hm-navy-1000;
+$search-result-preview-color: $hm-navy-1000;
+$sidebar-color: $hm-navy-100;
+
+// Override theme variables.
 $content-width: 915px;
 $gutter-spacing: $sp-7;
 $header-height: 70px;
-$link-color: $hm-blue;
-$nav-child-link-color: $hm-navy-1000;
 $nav-list-item-height: $spacing-unit * 3.2;
 $nav-list-item-height-sm: $spacing-unit * 3.2;
 $nav-width: 276px;
-$sidebar-color: $hm-navy-100;
