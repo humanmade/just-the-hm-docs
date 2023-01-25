@@ -2,17 +2,64 @@ html {
 	font-size: $font-size-5 !important;
 }
 
-input::placeholder,
-.search-label .search-icon {
-	color: $link-color;
-}
 
 a:not([class]) {
 	text-decoration-color: $link-color;
 }
 
+input::placeholder,
+.search-label .search-icon {
+	color: $link-color;
+}
+
 input::placeholder {
 	@include fs-4;
+}
+
+h1, h2, h3, h5, h6 {
+	font-weight: 700;
+}
+
+h1 {
+	@include fs-9;
+}
+
+h2 {
+	@include fs-7;
+}
+
+h3 {
+	@include fs-6;
+}
+
+h4 {
+	@include fs-5;
+}
+
+h5 {
+	@include fs-5;
+}
+
+h6 {
+	@include fs-4;
+}
+
+.btn {
+	background-image: none;
+	border: 2px solid $link-color;
+	border-radius: rem( 24px );
+	box-shadow: none;
+	align-items: center;
+	display: inline-flex;
+	padding: $sp-2 $sp-4;
+
+	&::after {
+		content: "\2192";
+		font-size: 144%;
+		font-weight: 400;
+		line-height: 0.8;
+		margin-left: $sp-2;
+	}
 }
 
 .site-title:hover,
