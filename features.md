@@ -2,7 +2,7 @@
 layout: page
 title: Features
 description: Project features.
-nav_order: 2
+nav_order: 3
 ---
 
 # Features

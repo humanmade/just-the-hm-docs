@@ -1,13 +1,13 @@
 ---
 layout: default
 title: Configuration
-nav_order: 2
+nav_order: 4
 ---
 
 # Configuration
 {: .no_toc }
 
-Just the Docs has some specific configuration parameters that can be defined in your Jekyll site's \_config.yml file.
+Just the HM Docs has some specific configuration parameters that can be defined in your Jekyll site's \_config.yml file.
 {: .fs-6 .fw-300 }
 
 ## Table of contents
@@ -18,7 +18,7 @@ Just the Docs has some specific configuration parameters that can be defined in 
 
 ---
 
-View this site's [\_config.yml](https://github.com/just-the-docs/just-the-docs/tree/main/_config.yml) file as an example.
+View this site's [\_config.yml](https://github.com/humanmade/just-the-hm-docs/tree/main/_config.yml) file as an example.
 
 ## Site logo
 
@@ -86,8 +86,8 @@ See [the Code documentation]({% link docs/ui-components/code.md %}#mermaid-diagr
 ```yaml
 # Aux links for the upper right navigation
 aux_links:
-  "Just the Docs on GitHub":
-    - "//github.com/just-the-docs/just-the-docs"
+  "Just the HM Docs on GitHub":
+    - "//github.com/humanmade/just-the-hm-docs"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
@@ -115,7 +115,7 @@ See [Navigation Structure]({% link docs/navigation-structure.md %}#external-navi
 # appears at the bottom of every page's main content
 # Note: The footer_content option is deprecated and will be removed in a future major release. Please use `_includes/footer_custom.html` for more robust
 markup / liquid-based content.
-footer_content: "Copyright &copy; 2017-2020 Patrick Marsceill. Distributed by an <a href=\"https://github.com/just-the-docs/just-the-docs/tree/main/LICENSE.txt\">MIT license.</a>"
+footer_content: "Copyright &copy; 2023 Human Made. Distributed by an <a href=\"https://github.com/humanmade/just-the-hm-docs/tree/main/LICENSE.txt\">MIT license.</a>"
 
 # Footer last edited timestamp
 last_edit_timestamp: true # show or hide edit time - page must have `last_modified_date` defined in the frontmatter
@@ -124,7 +124,7 @@ last_edit_time_format: "%b %e %Y at %I:%M %p" # uses ruby's time format: https:/
 # Footer "Edit this page on GitHub" link text
 gh_edit_link: true # show or hide edit this page link
 gh_edit_link_text: "Edit this page on GitHub."
-gh_edit_repository: "https://github.com/just-the-docs/just-the-docs" # the github URL for your repo
+gh_edit_repository: "https://github.com/humanmade/just-the-hm-docs" # the github URL for your repo
 gh_edit_branch: "main" # the branch that your docs is served from
 # gh_edit_source: docs # the source that your files originate from
 gh_edit_view_mode: "tree" # "tree" or "edit" if you want the user to jump into the editor immediately
@@ -256,7 +256,7 @@ collections:
     output: true
 
 just_the_docs:
-  # Define which collections are used in just-the-docs
+  # Define which collections are used in just-the-hm-docs
   collections:
     # Reference the "tests" collection
     tests:
