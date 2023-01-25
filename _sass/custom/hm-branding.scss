@@ -5,6 +5,12 @@ html {
 
 a:not([class]) {
 	text-decoration-color: $link-color;
+
+	&:hover {
+		background: $base-button-color-hover;
+		color: darken($link-color, 10%);
+		text-decoration-color: darken($link-color, 10%);
+	}
 }
 
 input::placeholder,
@@ -51,6 +57,7 @@ h6 {
 	box-shadow: none;
 	align-items: center;
 	display: inline-flex;
+	font-weight: 700;
 	padding: $sp-2 $sp-4;
 
 	&::after {
@@ -59,7 +66,21 @@ h6 {
 		font-weight: 400;
 		line-height: 0.8;
 		margin-left: $sp-2;
+		transition: transform ease 200ms;
 	}
+
+	&:hover {
+		background: $base-button-color-hover;
+
+		&::after {
+			transform: translateX( $sp-1 );
+		}
+	}
+}
+
+.btn-primary:hover {
+	background: $btn-primary-color-hover;
+	border-color: $btn-primary-color-hover;
 }
 
 .site-title:hover,
@@ -129,6 +150,7 @@ h6 {
 		text-decoration: underline;
 		text-underline-offset: rem( 3px );
 
+		.nav-list .nav-list-item > &:hover,
 		&:hover,
 		&.active {
 			color: $link-color;

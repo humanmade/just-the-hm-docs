@@ -1,19 +1,24 @@
 // HM colors.
-$hm-blue: #4668DF;
+$hm-red-100: #FFECED;
+$hm-red-600: #DD2E36;
+$hm-blue-100: #EFF2FF;
+$hm-blue-600: #4668DF;
 $hm-navy-100: #F7FAFF;
 $hm-navy-200: #E4EFFF;
 $hm-navy-300: #D2E4FF;
+$hm-navy-800: #4C6C9B;
 $hm-navy-1000: #203657;
-$hm-white: #fff;
 
 // Override theme colors.
-$base-button-color: $hm-white;
+$base-button-color: $white;
+$base-button-color-hover: $hm-navy-100;
 $body-text-color: $hm-navy-1000;
 $body-heading-color: $hm-navy-1000;
 $border-color: $hm-navy-300;
 $border-color-lt: $hm-navy-200;
-$btn-primary-color: $hm-blue;
-$link-color: $hm-blue;
+$btn-primary-color: $hm-blue-600;
+$btn-primary-color-hover: $hm-red-600;
+$link-color: $hm-blue-600;
 $nav-child-link-color: $hm-navy-1000;
 $search-result-preview-color: $hm-navy-1000;
 $sidebar-color: $hm-navy-100;
