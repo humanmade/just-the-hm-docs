@@ -996,10 +996,6 @@ remote_theme: just-the-docs/just-the-docs@v0.3.3
 [@EricFromCanada]: https://github.com/EricFromCanada
 [@m-r-mccormick]: https://github.com/m-r-mccormick
 
-## Pre-release v0.4.0.rc4
-
-Happy new year! We're celebrating with another pre-release, with features that should help theme users better adapt to changes moving forward. **We aim to re-release this as `v0.4.0`, with only few changes**.
-
 Notable new additions include:
 
 - modular site components, which split up the site into smaller reusable components; advanced theme users can then remix layouts quickly without duplication
