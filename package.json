@@ -1,10 +1,10 @@
 {
-  "name": "just-the-docs",
+  "name": "just-the-hm-docs",
   "version": "0.3.3",
   "description": "A modern Jekyll theme for documentation",
-  "repository": "just-the-docs/just-the-docs",
+  "repository": "just-the-hm-docs/just-the-hm-docs",
   "license": "MIT",
-  "bugs": "https://github.com/just-the-docs/just-the-docs/issues",
+  "bugs": "https://github.com/humanmade/just-the-hm-docs/issues",
   "devDependencies": {
     "npm-run-all": "^4.1.5",
     "prettier": "^3.4.2",

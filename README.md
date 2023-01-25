@@ -1,29 +1,19 @@
----
-layout: home
-title: Just the HM Docs
-nav_exclude: true
-permalink: /:path/
-seo:
-  type: Open source project documentation
-  name: Just the HM Docs
----
-
 # Just the HM Docs
 
 Just the HM Docs is a GitHub Pages template developed for the purpose of quickly deploying documentation for Human Made open source projects. In addition to serving plain web pages and files, it provides a boilerplate for:
 
-- [announcements](announcements.md),
-- an [introduction](introduction.md) page,
-- a [feature](features.md) list,
-- [guides](guides.md),
-- [modules](modules.md),
-- and a [changelog](changelog.md).
+- [announcements](https://humanmade.github.io/just-the-hm-docs/announcements.md),
+- an [introduction](https://humanmade.github.io/just-the-hm-docs/introduction.md) page,
+- a [feature](https://humanmade.github.io/just-the-hm-docs/features.md) list,
+- [guides](https://humanmade.github.io/just-the-hm-docs/guides.md),
+- [modules](https://humanmade.github.io/just-the-hm-docs/modules.md),
+- and a [changelog](https://humanmade.github.io/just-the-hm-docs/changelog.md).
 
 Just the HM Docs is a fork of the popular [Just the Docs](https://github.com/just-the-docs/just-the-docs) Jekyll theme, which provides a robust and thoroughly-tested foundation for your website. Just the HM Docs includes features such as:
 
-- automatic [navigation structure](docs/navigation-structure),
-- instant, full-text [search](docs/search) and page indexing,
-- and a set of [UI components](docs/ui-components) and authoring [utilities](docs/utilities).
+- automatic [navigation structure](https://humanmade.github.io/just-the-hm-docs/docs/navigation-structure),
+- instant, full-text [search](https://humanmade.github.io/just-the-hm-docs/docs/search) and page indexing,
+- and a set of [UI components](https://humanmade.github.io/just-the-hm-docs/docs/ui-components) and authoring [utilities](https://humanmade.github.io/just-the-hm-docs/docs/utilities).
 
 ## Getting Started
 

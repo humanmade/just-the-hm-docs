@@ -3,7 +3,7 @@ layout: page
 title: Guides
 description: Guides & how-to materials for getting started.
 has_children: true
-nav_order: 2
+nav_order: 3
 ---
 
 # Guides

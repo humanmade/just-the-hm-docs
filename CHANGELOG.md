@@ -2,7 +2,7 @@
 layout: page
 title: Changelog
 description: A curated, chronologically ordered list of notable changes for each version of the project.
-nav_order: 10
+nav_order: 99
 ---
 
 # Changelog
