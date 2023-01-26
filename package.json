@@ -1,0 +1,20 @@
+{
+  "name": "just-the-hm-docs",
+  "version": "0.3.3",
+  "description": "A modern Jekyll theme for documentation",
+  "repository": "just-the-hm-docs/just-the-hm-docs",
+  "license": "MIT",
+  "bugs": "https://github.com/humanmade/just-the-hm-docs/issues",
+  "devDependencies": {
+    "prettier": "^2.8.3",
+    "stylelint": "^14.16.1",
+    "stylelint-config-prettier-scss": "0.0.1",
+    "stylelint-config-standard-scss": "^6.1.0",
+    "stylelint-prettier": "^2.0.0"
+  },
+  "scripts": {
+    "test": "stylelint '**/*.scss'",
+    "format": "prettier --write '**/*.{scss,js,json}'",
+    "stylelint-check": "stylelint-config-prettier-check"
+  }
+}

@@ -9,7 +9,7 @@
 }
 
 %card {
-  @include abstract-card();
+  @include abstract-card;
   display: flex;
   flex-direction: column;
   min-width: 0;
@@ -17,11 +17,11 @@
   position: relative;
   word-wrap: break-word;
 
-  >:first-child {
+  > :first-child {
     border-top: none !important;
   }
 
-  >:last-child {
+  > :last-child {
     border-bottom: none !important;
   }
 

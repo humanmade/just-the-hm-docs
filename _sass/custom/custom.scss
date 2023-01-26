@@ -1,5 +1,6 @@
+// stylelint-disable scss/at-extend-no-missing-placeholder
 // Just the HM Docs dependencies
-@import 'card';
+@import "card";
 
 // Just the HM Docs styles
 @import 'hm-branding';
@@ -23,7 +24,6 @@ details {
 
 summary {
   @extend .btn, .btn-outline;
-
   width: 100%;
 }
 
