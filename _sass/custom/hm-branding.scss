@@ -107,9 +107,7 @@ h6 {
     box-shadow: 0 0 0 3px rgba($link-color, 0.4);
 
     &:not(.btn-primary, .btn-purple, .btn-blue, .btn-green, .btn-outline) {
-      box-shadow:
-        inset 0 0 0 2px $link-color,
-        0 0 0 3px rgba($link-color, 0.4);
+      box-shadow: inset 0 0 0 2px $link-color, 0 0 0 3px rgba($link-color, 0.4);
     }
   }
 }
@@ -128,8 +126,7 @@ h6 {
   &:focus,
   &:focus:hover,
   &.selected:focus {
-    box-shadow:
-      inset 0 0 0 2px $body-heading-color,
+    box-shadow: inset 0 0 0 2px $body-heading-color,
       0 0 0 3px rgba($link-color, 0.4);
   }
 }
