@@ -213,6 +213,10 @@ h6 {
     &.active {
       font-weight: 700;
     }
+
+    &.external {
+      padding-right: 1rem;
+    }
   }
 }
 
