@@ -3,28 +3,19 @@
 @import "card";
 
 // Just the HM Docs styles
-@import 'hm-branding';
-@import 'announcement';
-@import 'feature';
+@import "hm-branding";
+@import "hm-code";
+@import "hm-notes";
+@import "announcement";
+@import "feature";
 
 // Overrides
-code {
-  font-size: 14px;
-  padding: 0.2em 0.4em;
-  border: none;
-}
-
 iframe {
   max-width: 100%;
 }
 
 details {
   @extend .mb-4;
-}
-
-summary {
-  @extend .btn, .btn-outline;
-  width: 100%;
 }
 
 .main-content-wrap {

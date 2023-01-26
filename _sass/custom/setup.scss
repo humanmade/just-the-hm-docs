@@ -2,3 +2,17 @@
 $base-button-color-hover: $base-button-color;
 $border-color-lt: $border-color;
 $btn-primary-color-hover: $btn-primary-color;
+$code-block-background-color: $code-background-color;
+$code-block-color: $body-text-color;
+
+// HM colors for callouts
+// Note that the darkness numbers do not match the designs,
+// but are necessary for the way the theme creates the color values.
+$hm-red-000: #FFC1C4;
+$hm-red-300: #dd2e36;
+$hm-blue-000: #CAD6FF;
+$hm-blue-300: #4C6C9B;
+$hm-purple-000: #E7D4FF;
+$hm-purple-300: #6A3BA6;
+$hm-mint-000: #BEFFF6;
+$hm-mint-300: #008070;
