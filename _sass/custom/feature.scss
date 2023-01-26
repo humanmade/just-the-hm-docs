@@ -13,7 +13,7 @@
     }
   }
 
-  >dl {
+  > dl {
     border-bottom: $border $border-color;
     border-top: $border $border-color;
     display: grid;
@@ -41,20 +41,20 @@
       }
     }
 
-    >dt {
+    > dt {
       @extend %feature-item;
       border-top: $border $border-color;
       font-weight: normal;
       text-align: right;
 
-      +dd {
+      + dd {
         border-top: $border $border-color;
       }
 
       &:first-child {
         border-top: none;
 
-        +dd {
+        + dd {
           border-top: none;
         }
       }
@@ -64,14 +64,16 @@
       }
     }
 
-    >dd {
+    > dd {
       @extend %feature-item;
 
-      +dd {
+      + dd {
         padding-top: 0;
       }
 
-      ol, ul, dl {
+      ol,
+      ul,
+      dl {
         margin: 0;
       }
 
