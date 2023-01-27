@@ -131,6 +131,10 @@ h6 {
   }
 }
 
+.label {
+  padding: $sp-1 $sp-2;
+}
+
 .site-title,
 .site-button {
   outline-offset: -1px;
@@ -153,13 +157,13 @@ h6 {
 .site-title,
 .nav-list .nav-list-item .nav-list-link,
 .site-footer {
-  @media (min-width: 50rem) {
+  @include mq(md) {
     padding-left: $gutter-spacing-sm;
   }
 }
 
 .site-title {
-  @media (min-width: 50rem) {
+  @include mq(md) {
     font-size: rem(21px) !important;
     padding-bottom: $gutter-spacing-sm;
     padding-top: $gutter-spacing-sm;
@@ -175,7 +179,7 @@ h6 {
     content: "Documentation";
     padding-left: rem(62px);
 
-    @media (min-width: 50rem) {
+    @include mq(md) {
       padding-left: rem(53px);
     }
   }
@@ -224,7 +228,7 @@ h6 {
   padding: $gutter-spacing-sm;
   padding-bottom: 0;
 
-  @media (min-width: 50rem) {
+  @include mq(md) {
     padding: 0;
   }
 }
@@ -236,7 +240,7 @@ h6 {
     box-shadow: inset 0 0 1em $grey-lt-100;
   }
 
-  @media (min-width: 50rem) {
+  @include mq(md) {
     padding-left: #{$gutter-spacing + $sp-6};
   }
 }
