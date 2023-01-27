@@ -180,16 +180,16 @@ callouts:
     color: yellow
   important:
     title: Important
-    color: hm-purple
+    color: hm-purple-callout
   new:
     title: New
-    color: hm-mint
+    color: hm-mint-callout
   note:
     title: Note
-    color: hm-blue
+    color: hm-blue-callout
   warning:
     title: Warning
-    color: hm-red
+    color: hm-red-callout
 
 # Google Analytics Tracking (optional)
 # Supports a CSV of tracking ID strings (eg. "UA-1234567-89,G-1AB234CDE5")

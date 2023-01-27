@@ -13,22 +13,24 @@
   color: $white;
   text-transform: uppercase;
   vertical-align: middle;
-  background-color: $blue-100;
+  background-color: $hm-blue-600;
+  @include fs-2;
+
   border-radius: 12px;
 
   @include fs-2;
 }
 
-.label-green:not(g) {
-  background-color: $green-200;
+.label-green {
+  background-color: $hm-mint-900;
 }
 
-.label-purple:not(g) {
-  background-color: $purple-100;
+.label-purple {
+  background-color: $hm-purple-800;
 }
 
-.label-red:not(g) {
-  background-color: $red-200;
+.label-red {
+  background-color: $hm-red-600;
 }
 
 .label-yellow:not(g) {
