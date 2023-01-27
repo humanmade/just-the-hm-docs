@@ -23,7 +23,7 @@ View this site's [\_config.yml](https://github.com/humanmade/just-the-hm-docs/tr
 
 ```yaml
 # Set a path/url to a logo that will be displayed instead of the title
-logo: "/assets/images/just-the-docs.png"
+logo: "/assets/images/hm-logo.svg"
 ```
 
 ## Site favicon
