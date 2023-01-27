@@ -1,14 +1,3 @@
-// HM colors.
-$hm-red-100: #ffeced;
-$hm-red-600: #dd2e36;
-$hm-blue-100: #eff2ff;
-$hm-blue-600: #4668df;
-$hm-navy-100: #f7faff;
-$hm-navy-200: #e4efff;
-$hm-navy-300: #d2e4ff;
-$hm-navy-800: #4c6c9b;
-$hm-navy-1000: #203657;
-
 // Override theme colors.
 $base-button-color: $white;
 $base-button-color-hover: $hm-navy-100;
@@ -26,11 +15,6 @@ $link-color: $hm-blue-600;
 $nav-child-link-color: $hm-navy-1000;
 $search-result-preview-color: $hm-navy-1000;
 $sidebar-color: $hm-navy-100;
-
-// Theme button colors.
-$purple-100: $hm-purple-300;
-$blue-000: $hm-blue-600;
-$green-100: $hm-mint-300;
 
 // Override theme variables.
 $border-radius: rem(6px);
