@@ -168,29 +168,6 @@ kramdown:
     block:
       line_numbers: false
 
-# Collections for website data
-collections:
-  features:
-  changelog:
-  announcements:
-# Default layouts for each collection type
-defaults:
-  - scope:
-      path: ''
-      type: features
-    values:
-      layout: feature
-  - scope:
-      path: ''
-      type: changelog
-    values:
-      layout: log
-  - scope:
-      path: ''
-      type: announcements
-    values:
-      layout: announcement
-
 compress_html:
   clippings: all
   comments: all

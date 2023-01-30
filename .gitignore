@@ -11,7 +11,6 @@
 .jekyll-metadata
 .sass-cache/
 node_modules/
-vendor/
 
 # Built files
 *.gem
