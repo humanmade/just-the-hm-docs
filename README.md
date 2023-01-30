@@ -10,16 +10,7 @@ seo:
 
 # Just the HM Docs
 
-Just the HM Docs is a GitHub Pages template developed for the purpose of quickly deploying documentation for Human Made open source projects. In addition to serving plain web pages and files, it provides a boilerplate for:
-
-- [announcements](https://humanmade.github.io/just-the-hm-docs/announcements.md)
-- an [introduction](https://humanmade.github.io/just-the-hm-docs/introduction.md) page
-- a [feature](https://humanmade.github.io/just-the-hm-docs/features.md) list
-- [guides](https://humanmade.github.io/just-the-hm-docs/guides.md)
-- [modules](https://humanmade.github.io/just-the-hm-docs/modules.md)
-- and a [changelog](https://humanmade.github.io/just-the-hm-docs/changelog.md)
-
-Just the HM Docs is a template that extends the popular [Just the Docs](https://github.com/just-the-docs/just-the-docs) theme, which provides a robust and thoroughly-tested foundation for your website. Just the Docs include features such as:
+Just the HM Docs is a GitHub Pages template developed for the purpose of quickly deploying documentation for Human Made open source projects. It is a fork of the popular [Just the Docs](https://github.com/just-the-docs/just-the-docs) Jekyll theme, which provides a robust and thoroughly-tested foundation for your website. Just the HM Docs includes features such as:
 
 - automatic [navigation structure](https://humanmade.github.io/just-the-hm-docs/docs/navigation-structure)
 - instant, full-text [search](https://humanmade.github.io/just-the-hm-docs/docs/search) and page indexing
