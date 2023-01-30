@@ -28,12 +28,12 @@ Jekyll builds this Just the HM Docs theme docs website using the theme itself. T
 
 Just the HM Docs is a GitHub Pages template developed for the purpose of quickly deploying documentation for Human Made open source projects. In addition to serving plain web pages and files, it provides a boilerplate for:
 
-- [announcements](announcements),
-- an [introduction](introduction) page,
-- a [feature](features) list,
-- [guides](guides),
-- [modules](modules),
-- and a [changelog](changelog).
+- [announcements](announcements)
+- an [introduction](introduction) page
+- a [feature](features) list
+- [guides](guides)
+- [modules](modules)
+- and a [changelog](changelog)
 
 Browse the docs to learn more about how to use this theme.
 
