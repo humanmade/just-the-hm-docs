@@ -284,7 +284,7 @@ collections:
     permalink: "/:collection/:path/"
     output: true
 
-just_the_docs:
+just_the_hm_docs:
   # Define which collections are used in just-the-hm-docs
   collections:
     # Reference the "tests" collection
@@ -326,7 +326,7 @@ collections:
     permalink: "/:collection/:path/"
     output: true
 
-just_the_docs:
+just_the_hm_docs:
   collections:
     tests:
       name: Tests
