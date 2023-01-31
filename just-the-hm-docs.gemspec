@@ -16,7 +16,7 @@ Gem::Specification.new do |spec|
     "source_code_uri"   => "https://github.com/humanmade/just-the-hm-docs",
   }
 
-  spec.files         = `git ls-files -z ':!:*.jpg' ':!:*.png'`.split("\x0").select { |f| f.match(%r{^(assets|bin|_layouts|_includes|lib|Rakefile|_sass|LICENSE|README|changelog|favicon)}i) }
+  spec.files         = `git ls-files -z ':!:*.jpg'`.split("\x0").select { |f| f.match(%r{^(assets|bin|_layouts|_includes|lib|Rakefile|_sass|LICENSE.txt|README.md|changelog.md|favicon.ico)}i) }
   spec.executables   << 'just-the-hm-docs'
 
   spec.add_development_dependency "bundler", "~> 2.3.5"
