@@ -2,7 +2,7 @@
 layout: page
 title: Introduction
 description: Project information and background.
-nav_order: 2
+nav_order: 1
 ---
 
 # Introduction
