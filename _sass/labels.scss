@@ -9,22 +9,22 @@
   color: $white;
   text-transform: uppercase;
   vertical-align: middle;
-  background-color: $blue-100;
+  background-color: $hm-blue-600;
   @include fs-2;
 
   border-radius: 12px;
 }
 
 .label-green {
-  background-color: $green-200;
+  background-color: $hm-mint-900;
 }
 
 .label-purple {
-  background-color: $purple-100;
+  background-color: $hm-purple-800;
 }
 
 .label-red {
-  background-color: $red-200;
+  background-color: $hm-red-600;
 }
 
 .label-yellow {

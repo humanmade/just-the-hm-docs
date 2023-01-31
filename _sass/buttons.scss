@@ -101,13 +101,13 @@
 }
 
 .btn-purple {
-  @include btn-color($white, $purple-100);
+  @include btn-color($white, $hm-purple-800);
 }
 
 .btn-blue {
-  @include btn-color($white, $blue-000);
+  @include btn-color($white, $hm-blue-600);
 }
 
 .btn-green {
-  @include btn-color($white, $green-100);
+  @include btn-color($white, $hm-mint-900);
 }

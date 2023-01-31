@@ -24,7 +24,7 @@ View this site's [\_config.yml](https://github.com/humanmade/just-the-hm-docs/tr
 
 ```yaml
 # Set a path/url to a logo that will be displayed instead of the title
-logo: "/assets/images/just-the-docs.png"
+logo: "/assets/images/hm-logo.svg"
 ```
 
 ## Site favicon
@@ -153,11 +153,11 @@ const toggleDarkMode = document.querySelector('.js-toggle-dark-mode');
 
 jtd.addEvent(toggleDarkMode, 'click', function(){
   if (jtd.getTheme() === 'dark') {
-    jtd.setTheme('light');
+    jtd.setTheme('default');
     toggleDarkMode.textContent = 'Preview dark color scheme';
   } else {
     jtd.setTheme('dark');
-    toggleDarkMode.textContent = 'Return to the light side';
+    toggleDarkMode.textContent = 'Return to the HM side';
   }
 });
 </script>
