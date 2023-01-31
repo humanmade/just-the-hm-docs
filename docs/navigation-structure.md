@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Navigation Structure
-nav_order: 5
+nav_order: 6
 ---
 
 # Navigation Structure
@@ -20,7 +20,7 @@ nav_order: 5
 
 ## Main navigation
 
-The main navigation for your Just the Docs site is on the left side of the page at large screens and on the top (behind a tap) on small screens. The main navigation can be structured to accommodate a multi-level menu system (pages with children and grandchildren).
+The main navigation for your Just the HM Docs site is on the left side of the page at large screens and on the top (behind a tap) on small screens. The main navigation can be structured to accommodate a multi-level menu system (pages with children and grandchildren).
 
 By default, all pages will appear as top level pages in the main nav unless a parent page is defined (see [Pages with Children](#pages-with-children)).
 
@@ -243,8 +243,8 @@ To add auxiliary links to your site (in the upper right on all pages), add it to
 ```yaml
 # Aux links for the upper right navigation
 aux_links:
-  "Just the Docs on GitHub":
-    - "//github.com/just-the-docs/just-the-docs"
+  "Just the HM Docs on GitHub":
+    - "//github.com/humanmade/just-the-hm-docs"
 ```
 
 ---
@@ -260,8 +260,8 @@ External links will appear in the navigation after the links to ordinary pages, 
 ```yaml
 # External navigation links
 nav_external_links:
-  - title: Just the Docs on GitHub
-    url: https://github.com/just-the-docs/just-the-docs
+  - title: Just the HM Docs on GitHub
+    url: https://github.com/humanmade/just-the-hm-docs
     hide_icon: false # set to true to hide the external link icon - defaults to false
 ```
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Customization
-nav_order: 6
+nav_order: 7
 ---
 
 # Customization
@@ -21,7 +21,7 @@ nav_order: 6
 New
 {: .label .label-green }
 
-Just the Docs supports two color schemes: light (default), and dark.
+Just the HM Docs supports two color schemes: light (default), and dark.
 
 To enable a color scheme, set the `color_scheme` parameter in your site's `_config.yml` file:
 
@@ -68,7 +68,7 @@ If you want your custom scheme to be based on the `dark` scheme, you need to sta
 
 You can define custom schemes based on other custom schemes in the same way.
 
-Available variables are listed in the [\_variables.scss](https://github.com/just-the-docs/just-the-docs/tree/main/_sass/support/_variables.scss) file.
+Available variables are listed in the [\_variables.scss](https://github.com/humanmade/just-the-hm-docs/tree/main/_sass/support/_variables.scss) file.
 
 For example, to change the link color from the purple default to blue, include the following inside your scheme file:
 
@@ -96,7 +96,7 @@ color_scheme: foo
 
 ### Switchable custom scheme
 
-If you want to be able to change the scheme dynamically, for example via javascript, just add a file `assets/css/just-the-docs-foo.scss` (replace `foo` by your scheme name)
+If you want to be able to change the scheme dynamically, for example via javascript, just add a file `assets/css/just-the-hm-docs-foo.scss` (replace `foo` by your scheme name)
 with the following content:
 
 {% raw %}
@@ -163,7 +163,7 @@ You can customize the theme by overriding any of the custom [Jekyll includes](ht
 
 To do this, create an `_includes` directory and make a copy of the specific file you wish to modify. The content in this file will override the theme defaults. You can learn more about this process in the Jekyll docs for [Overriding theme defaults](https://jekyllrb.com/docs/themes/#overriding-theme-defaults).
 
-Just the Docs provides the following custom includes files:
+Just the HM Docs provides the following custom includes files:
 
 ### Custom TOC Heading
 
@@ -205,7 +205,7 @@ Content added to this file appears at the top of every page's main content betwe
 
 `_includes/nav_footer_custom.html`
 
-Any content added to this file will appear at the bottom left of the page below the site's navigation. By default an attribution to Just the Docs is displayed which reads, `This site uses Just the Docs, a documentation theme for Jekyll.`.
+Any content added to this file will appear at the bottom left of the page below the site's navigation. By default an attribution to Just the HM Docs is displayed which reads, `This site uses Just the HM Docs, a documentation theme for Jekyll.`.
 
 ### Custom Search Placeholder
 
@@ -242,11 +242,11 @@ New (v0.4.0)
 Advanced
 {: .label .label-yellow }
 
-Just the Docs uses Jekyll's powerful [layouts](https://jekyllrb.com/docs/layouts/) and [includes](https://jekyllrb.com/docs/includes/) features to generate and compose various elements of the site. Jekyll users and developers can extend or replace existing layouts and includes to customize the entire site layout.
+Just the HM Docs uses Jekyll's powerful [layouts](https://jekyllrb.com/docs/layouts/) and [includes](https://jekyllrb.com/docs/includes/) features to generate and compose various elements of the site. Jekyll users and developers can extend or replace existing layouts and includes to customize the entire site layout.
 
 ### Default layout and includable components
 
-The `default` layout is inherited by most of the "out-of-the-box" pages provided by Just the Docs. It composes various re-usable components of the site, including the sidebar, navbar, footer, breadcrumbs, and various imports. Most users who create new pages or layouts will inherit from `default`.
+The `default` layout is inherited by most of the "out-of-the-box" pages provided by Just the HM Docs. It composes various re-usable components of the site, including the sidebar, navbar, footer, breadcrumbs, and various imports. Most users who create new pages or layouts will inherit from `default`.
 
 Here is a simplified code example of what it looks like:
 
@@ -295,7 +295,7 @@ Defining a new `_includes` with the same name as any of these components will si
 
 To briefly summarize each component:
 
-- `_includes/head.html` is the entire `<head>` tag for the site; this imports stylesheets, various JavaScript files (ex: analytics, mermaid, search, and Just the Docs code), and SEO / meta information.
+- `_includes/head.html` is the entire `<head>` tag for the site; this imports stylesheets, various JavaScript files (ex: analytics, mermaid, search, and Just the HM Docs code), and SEO / meta information.
 - `_includes/icons/icons.html` imports all SVG icons that are used throughout the site. Some, such as those relating to search or code snippet copying, are only loaded when those features are enabled.
 - `_includes/components/sidebar.html` renders the sidebar, containing the site header, navigation links, external links, collections, and nav footer.
 - `_includes/components/header.html` renders the navigation header, containing the search bar, custom header, and aux links
@@ -348,7 +348,7 @@ Here is a simplified code example of what it looks like:
 
 {% endraw %}
 
-This layout is packaged in Just the Docs. Users can indicate this alternative layout in page front matter:
+This layout is packaged in Just the HM Docs. Users can indicate this alternative layout in page front matter:
 
 {% raw %}
 
@@ -361,7 +361,7 @@ title: Minimal layout test
 
 {% endraw %}
 
-Similarly, users and developers can create other alternative layouts using Just the Docs' reusable includable components.
+Similarly, users and developers can create other alternative layouts using Just the HM Docs' reusable includable components.
 
 ### Default layout and inheritance chain
 
@@ -374,7 +374,7 @@ Note that as of now, `minimal` and `default` have no inheritance relationship.
 
 ### Overridden default Jekyll layouts
 
-By default, Jekyll (and its default theme `minima`) provide the `about`, `home`, `page`, and `post` layouts. In Just the Docs, we override all of these layouts with the `default` layout. Each of those layouts is simply:
+By default, Jekyll (and its default theme `minima`) provide the `about`, `home`, `page`, and `post` layouts. In Just the HM Docs, we override all of these layouts with the `default` layout. Each of those layouts is simply:
 
 {% raw %}
 

@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Search
-nav_order: 7
+nav_order: 8
 ---
 
 # Search
@@ -15,7 +15,7 @@ nav_order: 7
 
 ---
 
-Just the Docs uses [lunr.js](http://lunrjs.com) to add a client-side search interface powered by a JSON index that Jekyll generates.
+Just the HM Docs uses [lunr.js](http://lunrjs.com) to add a client-side search interface powered by a JSON index that Jekyll generates.
 All search results are shown in an auto-complete style interface (there is no search results page).
 By default, all generated HTML pages are indexed using the following data points:
 
@@ -115,12 +115,12 @@ search_exclude: true
 
 ## Generate search index when used as a gem
 
-If you use Just the Docs as a remote theme, you do not need the following steps.
+If you use Just the HM Docs as a remote theme, you do not need the following steps.
 
-If you use the theme as a gem, you must initialize the search by running this `rake` command that comes with `just-the-docs`:
+If you use the theme as a gem, you must initialize the search by running this `rake` command that comes with `just-the-hm-docs`:
 
 ```bash
-$ bundle exec just-the-docs rake search:init
+$ bundle exec just-the-hm-docs rake search:init
 ```
 
 This command creates the `assets/js/zzzz-search-data.json` file that Jekyll uses to create your search index.
@@ -133,7 +133,7 @@ By default, the search feature indexes a page's `.content`, `.title`, and *some*
 {: .warning }
 > Customizing search indices is an advanced feature that requires Javascript and Liquid knowledge.
 
-1. When Just the Docs is a local or gem theme, ensure `assets/js/zzzz-search-data.json` is up-to-date with [Generate search index when used as a gem](#generate-search-index-when-used-as-a-gem).
+1. When Just the HM Docs is a local or gem theme, ensure `assets/js/zzzz-search-data.json` is up-to-date with [Generate search index when used as a gem](#generate-search-index-when-used-as-a-gem).
 2. Add a new file named `_includes/lunr/custom-data.json`. Insert custom Liquid code that reads your data (e.g. the page object at `include.page`) then generates custom Javascript fields that hold the custom data you want to index. Verify these fields in the generated `assets/js/search-data.json`.
 3. Add a new file named `_includes/lunr/custom-index.js`. Insert custom Javascript code that reads your custom Javascript fields and inserts them into the search index. You may want to inspect `assets/js/just-the-docs.js` to better understand the code.
 
