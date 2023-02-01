@@ -32,7 +32,7 @@
 
   @include mq(lg) {
     margin-left: max(
-      rem($nav-width),
+      calc(rem($nav-width)),
       calc(
         (100% - #{rem($nav-width + $content-width)}) / 2 + #{rem($nav-width)}
       )
