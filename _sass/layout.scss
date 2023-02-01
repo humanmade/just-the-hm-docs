@@ -9,15 +9,17 @@
   @include mq(md) {
     flex-flow: column nowrap;
     position: fixed;
-    width: $nav-width-md;
+    width: rem($nav-width-md);
     height: 100%;
     border-right: $border $border-color;
     align-items: flex-end;
   }
 
   @include mq(lg) {
-    width: calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width});
-    min-width: $nav-width;
+    width: calc(
+      (100% - #{rem($nav-width + $content-width)}) / 2 + #{rem($nav-width)}
+    );
+    min-width: rem($nav-width);
   }
 
   & + .main {
@@ -60,14 +62,16 @@
 
   @include mq(md) {
     position: relative;
-    max-width: $content-width;
-    margin-left: $nav-width-md;
+    max-width: rem($content-width);
+    margin-left: rem($nav-width-md);
   }
 
   @include mq(lg) {
     margin-left: max(
-      $nav-width,
-      calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width})
+      rem($nav-width),
+      calc(
+        (100% - #{rem($nav-width + $content-width)}) / 2 + #{rem($nav-width)}
+      )
     );
   }
 }
@@ -91,7 +95,17 @@
   @include mq(md) {
     display: flex;
     justify-content: space-between;
-    height: $header-height;
+    height: rem($header-height);
+    background-color: $body-background-color;
+    border-bottom: $border $border-color;
+  }
+
+  &.nav-open {
+    display: block;
+
+    @include mq(md) {
+      display: flex;
+    }
   }
 }
 
@@ -101,7 +115,7 @@
   width: 100%;
 
   @include mq(lg) {
-    width: $nav-width;
+    width: rem($nav-width);
   }
 }
 
@@ -123,12 +137,12 @@
 
 .site-header {
   display: flex;
-  min-height: $header-height;
+  min-height: rem($header-height);
   align-items: center;
 
   @include mq(md) {
-    height: $header-height;
-    max-height: $header-height;
+    height: rem($header-height);
+    max-height: rem($header-height);
     border-bottom: $border $border-color;
   }
 }
