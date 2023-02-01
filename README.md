@@ -19,6 +19,16 @@ Getting started with Just the HM Docs is simple.
 
 Just the HM Docs requires no special Jekyll plugins and can run on GitHub Pages' standard Jekyll compiler. To setup a local development environment, clone your template repository and follow the GitHub Docs on [Testing your GitHub Pages site locally with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll).
 
+## Publishing a Gem
+
+The theme is distributed as a Ruby gem so that it can be easily consumed by any Jekyll site. New versions can be published by anything with access to [the gem](https://rubygems.org/gems/just-the-hm-docs/) manually, but there is also a GitHub Action set up to automate publishing to rubygems.org and the GitHub package repository.
+
+The action only runs when triggered manually. To do so, run the ["Publish Ruby Gem"](https://github.com/humanmade/just-the-hm-docs/actions/workflows/publish-gem.yml) action.
+
+In order to push to rubygems.org, the action needs access to an auth token. The auth token can be set via [`Security / Secrets and variables / Actions`](https://github.com/humanmade/just-the-hm-docs/settings/secrets/actions). To create a new token, an authorized gem owner will need to create a new one from the [`API Keys`](https://rubygems.org/profile/api_keys) setting area on rubygems.org. Once created, add the token with the name `RUBYGEMS_AUTH_TOKEN`.
+
+**NOTE:** The API key used needs to be accessible by machines *without* 2FA—otherwise the automated deployment will fail becuase it will be prompted for an OTP in a non-interactive environment. *If the security tradeoff seems reasonable* the MFA level for a rubygems.org account can be set to "UA and gem signin," which will prompt for 2FA on the website and with the `gem signin` command, but *not* for `gem push`, allowing the automated gem deploy action to work.
+
 ## License
 
 The theme is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).

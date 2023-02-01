@@ -27,6 +27,7 @@ logo: "/assets/images/hm-logo.svg"
 favicon_ico: "/assets/favicon/favicon.ico"
 
 # Theme settings
+theme: just-the-hm-docs
 color_scheme: hm
 permalink: pretty
 

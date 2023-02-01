@@ -1,4 +1,4 @@
 source "https://rubygems.org"
-gemspec
 
 gem "webrick", "~> 1.7"
+gem "just-the-hm-docs", ">= 1.0.0.rc1"
