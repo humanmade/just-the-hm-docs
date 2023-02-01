@@ -1,5 +1,9 @@
 // The basic two column layout
 
+:root {
+  --sidebar-width: calc((100% - #{rem($nav-width + $content-width)}) / 2 + #{rem($nav-width)});
+}
+
 .side-bar {
   z-index: 0;
   display: flex;
@@ -16,9 +20,7 @@
   }
 
   @include mq(lg) {
-    width: calc(
-      (100% - #{rem($nav-width + $content-width)}) / 2 + #{rem($nav-width)}
-    );
+    width: var(--sidebar-width);
     min-width: rem($nav-width);
   }
 
@@ -69,9 +71,7 @@
   @include mq(lg) {
     margin-left: max(
       $nav-width * 1px,
-      calc(
-        (100% - #{($nav-width + $content-width) * 1px}) / 2 + #{$nav-width * 1px}
-      )
+      var(--sidebar-width)
     );
   }
 }
