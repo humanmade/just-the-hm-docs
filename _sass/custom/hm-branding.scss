@@ -164,7 +164,7 @@ h6 {
 
 .site-title {
   @include mq(md) {
-    font-size: rem(21px) !important;
+    font-size: rem(21) !important;
     padding-bottom: $gutter-spacing-sm;
     padding-top: $gutter-spacing-sm;
   }
@@ -177,10 +177,10 @@ h6 {
 
   &::after {
     content: "Documentation";
-    padding-left: rem(62px);
+    padding-left: rem(62);
 
     @include mq(md) {
-      padding-left: rem(53px);
+      padding-left: rem(53);
     }
   }
 }
@@ -205,7 +205,7 @@ h6 {
   .nav-list-link {
     outline-offset: -1px;
     text-decoration: underline;
-    text-underline-offset: rem(3px);
+    text-underline-offset: rem(3);
 
     .nav-list .nav-list-item > &:hover,
     &:hover,
@@ -246,8 +246,8 @@ h6 {
 }
 
 .search-label .search-icon {
-  height: rem(22px);
-  width: rem(22px);
+  height: rem(22);
+  width: rem(22);
 }
 
 .search-result {

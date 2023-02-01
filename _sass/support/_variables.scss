@@ -4,6 +4,7 @@ $body-font-family: system-ui, -apple-system, blinkmacsystemfont, "Segoe UI",
   roboto, "Helvetica Neue", arial, sans-serif !default;
 $mono-font-family: "SFMono-Regular", menlo, consolas, monospace !default;
 $root-font-size: 16px !default; // Base font-size for rems
+$root-font-size-rem-base: 0.0625 !default; // 1 divided by base font-size for rem function.
 $body-line-height: 1.4 !default;
 $content-line-height: 1.6 !default;
 $body-heading-line-height: 1.25 !default;
@@ -108,22 +109,22 @@ $border-color: $grey-lt-100 !default;
 
 $gutter-spacing: $sp-6 !default;
 $gutter-spacing-sm: $sp-4 !default;
-$nav-width: 264px !default;
-$nav-width-md: 248px !default;
+$nav-width: 264 !default;
+$nav-width-md: 248 !default;
 $nav-list-item-height: $sp-6 !default;
 $nav-list-item-height-sm: $sp-8 !default;
 $nav-list-expander-right: true;
-$content-width: 800px !default;
-$header-height: 60px !default;
-$search-results-width: $content-width - $nav-width !default;
+$content-width: 800 !default;
+$header-height: 60 !default;
+$search-results-width: rem($content-width - $nav-width) !default;
 $transition-duration: 400ms;
 
 // Media queries in pixels
 
 $media-queries: (
-  xs: 320px,
-  sm: 500px,
+  xs: 320,
+  sm: 500,
   md: $content-width,
   lg: $content-width + $nav-width,
-  xl: 1400px,
+  xl: 1400,
 ) !default;

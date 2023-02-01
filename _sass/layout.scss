@@ -1,5 +1,32 @@
 // The basic two column layout
 
+:root {
+  --sidebar-width: #{rem($nav-width-md)};
+
+  @include mq(lg) {
+    --sidebar-width: calc(
+      (100% - #{rem($nav-width + $content-width)}) / 2 + #{rem($nav-width)}
+    );
+  }
+}
+
+body {
+  position: relative;
+  padding-bottom: $sp-10;
+  overflow-y: scroll;
+
+  @include mq(md) {
+    display: grid;
+    grid-template-columns: rem($nav-width-md) 1fr;
+    position: static;
+    padding-bottom: 0;
+  }
+
+  @include mq(lg) {
+    grid-template-columns: minmax(rem($nav-width), var(--sidebar-width)) 1fr;
+  }
+}
+
 .side-bar {
   z-index: 0;
   display: flex;
@@ -9,30 +36,22 @@
   @include mq(md) {
     flex-flow: column nowrap;
     position: fixed;
-    width: $nav-width-md;
+    width: var(--sidebar-width);
     height: 100%;
     border-right: $border $border-color;
     align-items: flex-end;
   }
 
   @include mq(lg) {
-    width: calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width});
-    min-width: $nav-width;
+    min-width: rem($nav-width);
   }
 }
 
 .main {
   @include mq(md) {
+    grid-column-start: 2;
     position: relative;
-    max-width: $content-width;
-    margin-left: $nav-width-md;
-  }
-
-  @include mq(lg) {
-    margin-left: max(
-      $nav-width,
-      calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width})
-    );
+    max-width: rem($content-width);
   }
 }
 
@@ -56,7 +75,7 @@
   @include mq(md) {
     display: flex;
     justify-content: space-between;
-    height: $header-height;
+    height: rem($header-height);
     background-color: $body-background-color;
     border-bottom: $border $border-color;
   }
@@ -76,7 +95,7 @@
   width: 100%;
 
   @include mq(lg) {
-    width: $nav-width;
+    width: rem($nav-width);
   }
 }
 
@@ -98,12 +117,12 @@
 
 .site-header {
   display: flex;
-  min-height: $header-height;
+  min-height: rem($header-height);
   align-items: center;
 
   @include mq(md) {
-    height: $header-height;
-    max-height: $header-height;
+    height: rem($header-height);
+    max-height: rem($header-height);
     border-bottom: $border $border-color;
   }
 }
@@ -166,21 +185,6 @@
     rgba($feedback-color, 0.8) 100%
   );
 }
-
-// stylelint-disable selector-max-type
-
-body {
-  position: relative;
-  padding-bottom: $sp-10;
-  overflow-y: scroll;
-
-  @include mq(md) {
-    position: static;
-    padding-bottom: 0;
-  }
-}
-
-// stylelint-enable selector-max-type
 
 .site-footer {
   @include container;
