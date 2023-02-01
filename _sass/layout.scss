@@ -34,7 +34,7 @@
     margin-left: max(
       $nav-width * 1px,
       calc(
-        (100% - #{rem($nav-width + $content-width)}) / 2 + #{rem($nav-width)}
+        (100% - #{($nav-width + $content-width) * 1px}) / 2 + #{$nav-width * 1px}
       )
     );
   }
