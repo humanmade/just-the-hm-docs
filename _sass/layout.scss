@@ -4,14 +4,22 @@
   --sidebar-width: #{rem($nav-width-md)};
 
   @include mq(lg) {
-    --sidebar-width: calc((100% - #{rem($nav-width + $content-width)}) / 2 + #{rem($nav-width)});
+    --sidebar-width: calc(
+      (100% - #{rem($nav-width + $content-width)}) / 2 + #{rem($nav-width)}
+    );
   }
 }
 
 body {
+  position: relative;
+  padding-bottom: $sp-10;
+  overflow-y: scroll;
+
   @include mq(md) {
     display: grid;
     grid-template-columns: rem($nav-width-md) 1fr;
+    position: static;
+    padding-bottom: 0;
   }
 
   @include mq(lg) {
@@ -177,21 +185,6 @@ body {
     rgba($feedback-color, 0.8) 100%
   );
 }
-
-// stylelint-disable selector-max-type
-
-body {
-  position: relative;
-  padding-bottom: $sp-10;
-  overflow-y: scroll;
-
-  @include mq(md) {
-    position: static;
-    padding-bottom: 0;
-  }
-}
-
-// stylelint-enable selector-max-type
 
 .site-footer {
   @include container;
