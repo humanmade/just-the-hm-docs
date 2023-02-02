@@ -8,9 +8,9 @@ nav_order: 99
 # Changelog
 
 
-## v0.0.1
+## v1.0.0
 
-- Release [Just the HM docs](https://github.com/humanmade/just-the-hm-docs/pull/1) site.
+- Release [Just the HM docs](https://github.com/humanmade/just-the-hm-docs/pull/1).
 
 ## v0.0.0
 
