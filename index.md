@@ -66,4 +66,4 @@ Just the HM Docs is distributed by an [MIT license](https://github.com/humanmade
 [Just the HM Docs README]: https://github.com/humanmade/just-the-hm-docs/blob/main/README.md
 [GitHub Pages]: https://pages.github.com/
 [GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[customize]: {% link docs/customization.md %}
+[customize]: https://github.com/humanmade/just-the-hm-docs/docs/customization.md
