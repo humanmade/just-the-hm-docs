@@ -3,6 +3,7 @@ layout: page
 title: Introduction
 description: Project information and background.
 nav_order: 1
+permalink: /
 ---
 
 # Introduction
