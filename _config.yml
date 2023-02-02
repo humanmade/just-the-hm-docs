@@ -22,7 +22,7 @@ url: 'https://humanmade.github.io' # the base hostname & protocol for your site,
 repository: humanmade/just-the-hm-docs # for github-metadata
 
 # Set a path/url to a logo that will be displayed instead of the title
-logo: "/assets/images/hm-logo.svg"
+logo: "/assets/icons/hm-logo.svg"
 
 # Set a path/url to a favicon that will be displayed by the browser
 favicon_ico: "/assets/favicon/favicon.ico"
