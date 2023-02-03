@@ -7,6 +7,11 @@ nav_order: 99
 
 # Changelog
 
+## v1.0.1
+
+- Fix Sass compiling bug
+- Split icons into their own folder
+- Update documentation
 
 ## v1.0.0
 
