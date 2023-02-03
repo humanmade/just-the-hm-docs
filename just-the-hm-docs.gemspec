@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "just-the-hm-docs"
-  spec.version       = "1.0.0.rc1"
+  spec.version       = "1.0.1.rc1"
   spec.authors       = ["Human Made"]
   spec.email         = ["info@humanmade.com"]
 
