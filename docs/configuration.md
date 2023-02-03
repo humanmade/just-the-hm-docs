@@ -24,14 +24,14 @@ View this site's [\_config.yml](https://github.com/humanmade/just-the-hm-docs/tr
 
 ```yaml
 # Set a path/url to a logo that will be displayed instead of the title
-logo: "/assets/images/hm-logo.svg"
+logo: "/assets/icons/hm-logo.svg"
 ```
 
 ## Site favicon
 
 ```yaml
 # Set a path/url to a favicon that will be displayed by the browser
-favicon_ico: "/assets/images/favicon.ico"
+favicon_ico: "/assets/favicon/favicon.ico"
 ```
 
 If the path to your favicon is `/favicon.ico`, you can leave `favicon_ico` unset.

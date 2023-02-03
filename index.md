@@ -29,17 +29,24 @@ Browse the docs to learn more about how to use this theme.
 ## Getting started
 
 {: .note }
-To use the theme, you do ***not*** need to clone or fork the [Just the HM Docs repo]! You should do that only if you intend to browse the theme docs locally, contribute to the development of the theme, or develop a new theme based on Just the HM Docs.
+To use the theme, you do ***not*** need to clone or fork the main branch of the [Just the HM Docs repo]! You should do that only if you intend to browse the theme docs locally, contribute to the development of the theme, or develop a new theme based on Just the HM Docs.
 
-If [Jekyll] is installed on your computer, you can build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^2] And you will be able to deploy your local build to a different platform than GitHub Pages.
+The minimum that you need to run the theme are the [`_config.yml`](https://github.com/humanmade/just-the-hm-docs/blob/starter-theme/_config.yml) file and the [`Gemfile`](https://github.com/humanmade/just-the-hm-docs/blob/starter-theme/Gemfile).
 
-The created site:
+However, the [starter theme branch](https://github.com/humanmade/just-the-hm-docs/tree/starter-theme) includes:
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-hm-docs` gem
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
+- additional markdown files with sample content to get you started
+- a gitignore file, 404 template, and HM logo
+- a [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages
 
-{: .note }
-See the theme [README][Just the HM Docs README] for how to use the theme as a gem without creating a new site.
+{: .important-title }
+> Get started
+>
+> To get started with these files, just download the [starter theme branch](https://github.com/humanmade/just-the-hm-docs/tree/starter-theme) and place the files in a `/docs/` folder inside your own repo. 
+
+## Working locally
+
+If [Jekyll] is installed on your computer, you can build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^2] And you will be able to deploy your local build to a different platform than GitHub Pages if desired.
 
 ## About the project
 
