@@ -20,14 +20,19 @@ Just the HM Docs is a GitHub Pages template developed for the purpose of quickly
 
 Getting started with Just the HM Docs is simple.
 
-1. Create a [new repository based on Just the HM Docs](https://github.com/humanmade/just-the-hm-docs/generate).
-1. Update `_config.yml` and `README.md` with your project information. [Be sure to update the url and baseurl](https://mademistakes.com/mastering-jekyll/site-url-baseurl/).
-1. Configure a [publishing source for GitHub Pages](https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages). Your project docs website is now live!
-1. Edit and create `.md` [Markdown files](https://guides.github.com/features/mastering-markdown/) to add more content pages.
+1. Download the [starter theme branch](https://github.com/humanmade/just-the-hm-docs/tree/starter-theme) to get the following files:
+  - the [`_config.yml`](https://github.com/humanmade/just-the-hm-docs/blob/starter-theme/_config.yml) file and the [`Gemfile`](https://github.com/humanmade/just-the-hm-docs/blob/starter-theme/Gemfile)
+  - additional markdown files with sample content to get you started
+  - a gitignore file, 404 template, and HM logo
+  - a [GitHub Pages / Actions workflow](https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/) to build and publish the site on GitHub Pages
+1. Update `_config.yml` and `README.md` with your project information. [Be sure to update the url and baseurl](https://mademistakes.com/mastering-jekyll/site-url-baseurl/) if needed.
+1. Update the starter content in the `.md` [Markdown files](https://guides.github.com/features/mastering-markdown/) and add any additional content you need.
+1. Configure a [publishing source for GitHub Pages](https://help.github.com/en/articles/configuring-a-publishing-source-for-github-pages) and add an environment protection rule to allow only a specific branch to publish to your environment.
+1. Commit your files to your publishing branch. Your project docs website is now live!
 
 ### Local development environment
 
-Just the HM Docs requires no special Jekyll plugins and can run on GitHub Pages' standard Jekyll compiler. To setup a local development environment, clone your template repository and follow the GitHub Docs on [Testing your GitHub Pages site locally with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll).
+Just the HM Docs requires no special Jekyll plugins and can run on GitHub Pages' standard Jekyll compiler. To setup a local development environment, clone your repository and follow the GitHub Docs on [Testing your GitHub Pages site locally with Jekyll](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/testing-your-github-pages-site-locally-with-jekyll).
 
 ## Publishing a Gem
 
