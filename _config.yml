@@ -17,7 +17,7 @@ title: Just the HM Docs
 tagline: A Jekyll template for documenting Human Made open source projects
 description: A modern, highly customizable, responsive Jekyll template for documentation
 author: Human Made
-baseurl: '/docs' # the subpath of your site, e.g. /blog
+baseurl: '/just-the-hm-docs' # the subpath of your site, e.g. /blog
 url: 'https://humanmade.github.io' # the base hostname & protocol for your site, e.g. http://example.com
 repository: humanmade/just-the-hm-docs # for github-metadata
 
