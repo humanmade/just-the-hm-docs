@@ -7,6 +7,12 @@ nav_order: 99
 
 # Changelog
 
+## v1.0.2
+
+- Update Jekyll version to 4.3.2
+- Update Webrick to 1.8
+- Add layout default to config file
+
 ## v1.0.1
 
 - Fix Sass compiling bug
