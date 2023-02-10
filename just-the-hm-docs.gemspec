@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "just-the-hm-docs"
-  spec.version       = "1.0.1.rc1"
+  spec.version       = "1.0.2.rc1"
   spec.authors       = ["Human Made"]
   spec.email         = ["info@humanmade.com"]
 
@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
   spec.executables   << 'just-the-hm-docs'
 
   spec.add_development_dependency "bundler", "~> 2.3.5"
-  spec.add_runtime_dependency "jekyll", ">= 3.8.5"
+  spec.add_runtime_dependency "jekyll", ">= 4.3.2"
   spec.add_runtime_dependency "jekyll-seo-tag", ">= 2.0"
   spec.add_runtime_dependency "rake", ">= 12.3.1"
 end
