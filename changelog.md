@@ -11,7 +11,8 @@ nav_order: 99
 
 - Update Jekyll version to 4.3.2
 - Update Webrick to 1.8
-- Add layout default to config file
+- Add docs for setting Front Matter layout defaults
+- Use GitHub hosted theme
 
 ## v1.0.1
 
