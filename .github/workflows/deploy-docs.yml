@@ -32,10 +32,13 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v2
+      - name: Bundle install
+        run: |
+          bundle install --path=vendor/bundle --jobs 4 --retry 3
+          bundle clean
       - name: Build with Jekyll
         run: |
           cd docs
-          bundle install
           bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
