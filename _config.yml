@@ -121,8 +121,6 @@ heading_anchors: true
 
 # Aux links for the upper right navigation
 aux_links:
-  Human Made:
-    - "https://humanmade.com"
   Just the HM Docs on GitHub:
     - "https://github.com/humanmade/just-the-hm-docs"
 
