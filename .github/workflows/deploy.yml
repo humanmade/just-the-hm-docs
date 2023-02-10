@@ -43,7 +43,6 @@ jobs:
       - name: Bundle install
         run: |
           bundle install --jobs 4 --retry 3
-          bundle clean
       - name: Build with Jekyll
         # Outputs to the './_site' directory by default
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
