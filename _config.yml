@@ -6,7 +6,7 @@
 # feature for the data you need to update frequently.
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# "jekyll serve". If you change this file, please restart the server process.
 
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
@@ -122,9 +122,9 @@ heading_anchors: true
 # Aux links for the upper right navigation
 aux_links:
   Human Made:
-    - 'https://humanmade.com'
+    - "https://humanmade.com"
   Just the HM Docs on GitHub:
-    - 'https://github.com/humanmade/just-the-hm-docs'
+    - "https://github.com/humanmade/just-the-hm-docs"
 
 # Makes Aux links open in a new tab. Default is false
 aux_links_new_tab: false
