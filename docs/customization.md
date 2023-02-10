@@ -387,3 +387,16 @@ layout: default
 ```
 
 {% endraw %}
+
+### Defining a default layout
+
+To properly load a layout template with all of its includes and styles, you must define which layout you wish to use. Just the HM Docs does this by defining the layout in page front matter, as shown above. If you wish to set a default layout and not explicitly state the layout in each template, you must add the following Front Matter defaults to your `_config.yml` file:
+
+```
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default"
+```
