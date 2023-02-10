@@ -6,7 +6,7 @@
 # feature for the data you need to update frequently.
 #
 # For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
+# "jekyll serve". If you change this file, please restart the server process.
 
 # Site settings
 # These are used to personalize your new site. If you look in the HTML files,
@@ -17,8 +17,8 @@ title: Just the HM Docs
 tagline: A Jekyll template for documenting Human Made open source projects
 description: A modern, highly customizable, responsive Jekyll template for documentation
 author: Human Made
-baseurl: '/just-the-hm-docs' # the subpath of your site, e.g. /blog
-url: 'https://humanmade.github.io' # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/just-the-hm-docs" # the subpath of your site, e.g. /blog
+url: "https://humanmade.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Set a path/url to a logo that will be displayed instead of the title
 logo: "/assets/icons/hm-logo.svg"
@@ -33,10 +33,8 @@ permalink: pretty
 
 # Aux links for the upper right navigation
 aux_links:
-  Human Made:
-    - 'https://humanmade.com'
   Just the HM Docs on GitHub:
-    - 'https://github.com/humanmade/just-the-hm-docs'
+    - "https://github.com/humanmade/just-the-hm-docs"
 
 # External navigation links
 nav_external_links:
