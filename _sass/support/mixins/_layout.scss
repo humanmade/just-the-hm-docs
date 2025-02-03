@@ -1,4 +1,5 @@
 // Media query
+@use "sass:map";
 
 // Media query mixin
 // Usage:
@@ -7,12 +8,12 @@
 // }
 @mixin mq($name) {
   // Retrieves the value from the key
-  $value: map-get($media-queries, $name);
+  $value: map.get($media-queries, $name);
 
   // If the key exists in the map
   @if $value {
     // Prints a media query based on the value
-    @media (min-width: $value) {
+    @media (min-width: rems($value)) {
       @content;
     }
   } @else {

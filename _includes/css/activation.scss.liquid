@@ -29,7 +29,7 @@
       background-image: none;
     }
 
-    {%- if site.just_the_docs.collections %}
+    {%- if site.just_the_hm_docs.collections %}
     .site-nav > ul.nav-category-list > li > button svg {
       transform: rotate(-90deg);
     }
@@ -195,7 +195,7 @@
     The site-nav is:
     - an optional ul.nav-list with li.nav-list-items for non-collection top-level pages
     - an optional ul.nav-list with li.nav-list-item.externals
-    - any number of just-the-docs.collections
+    - any number of just-the-hm-docs.collections
     
     A non-foldable collection is:
     - a div.nav-category with the collection name, followed by:
@@ -226,7 +226,7 @@
 
     {%- capture activation_collection_prefix -%}
     .site-nav > ul:nth-of-type({{ nav_levels[0] }})
-    {%- if site.just_the_docs.collections[page.collection].nav_fold %} > li > ul
+    {%- if site.just_the_hm_docs.collections[page.collection].nav_fold %} > li > ul
     {%- endif -%}
     {%- endcapture -%}
 
@@ -290,7 +290,7 @@
     nav-list-expander-right is false, which seems unavoidable.
   {%- endcomment %}
 
-    {%- if site.just_the_docs.collections %}
+    {%- if site.just_the_hm_docs.collections %}
     .site-nav > ul.nav-category-list > li > button svg,
     {% endif -%}
     {{ activation_collection_prefix }} > li:nth-child({{ nav_levels[1] }}) > button svg
@@ -302,7 +302,7 @@
       transform: rotate(-90deg);
     }
 
-    {%- if site.just_the_docs.collections %}
+    {%- if site.just_the_hm_docs.collections %}
     .site-nav > ul.nav-category-list > li.nav-list-item > ul.nav-list,
     {% endif -%}
     {{ activation_collection_prefix }} > li.nav-list-item:nth-child({{ nav_levels[1] }}) > ul.nav-list

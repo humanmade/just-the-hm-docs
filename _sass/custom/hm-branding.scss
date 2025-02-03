@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 html {
   font-size: $font-size-5 !important;
 }
@@ -11,8 +13,8 @@ a:not([class]) {
 
   &:hover {
     background: $base-button-color-hover;
-    color: darken($link-color, 10%);
-    text-decoration-color: darken($link-color, 10%);
+    color: color.adjust($link-color, $lightness: -10%);
+    text-decoration-color: color.adjust($link-color, $lightness: -10%);
   }
 }
 
@@ -164,7 +166,7 @@ h6 {
 
 .site-title {
   @include mq(md) {
-    font-size: rem(21) !important;
+    font-size: rems(21) !important;
     padding-bottom: $gutter-spacing-sm;
     padding-top: $gutter-spacing-sm;
   }
@@ -177,10 +179,10 @@ h6 {
 
   &::after {
     content: "Documentation";
-    padding-left: rem(62);
+    padding-left: rems(62);
 
     @include mq(md) {
-      padding-left: rem(53);
+      padding-left: rems(53);
     }
   }
 }
@@ -205,7 +207,7 @@ h6 {
   .nav-list-link {
     outline-offset: -1px;
     text-decoration: underline;
-    text-underline-offset: rem(3);
+    text-underline-offset: rems(3);
 
     .nav-list .nav-list-item > &:hover,
     &:hover,
@@ -246,8 +248,8 @@ h6 {
 }
 
 .search-label .search-icon {
-  height: rem(22);
-  width: rem(22);
+  height: rems(22);
+  width: rems(22);
 }
 
 .search-result {

@@ -1,15 +1,9 @@
 // HM styling just for code blocks and snippets.
-:not(pre, figure) > code {
-  padding: $sp-1 $sp-2;
-}
+@use "sass:meta";
 
-div.highlighter-rouge,
-div.listingblock > div.content,
-figure.highlight,
-.highlight .table-wrapper td,
-.highlight .table-wrapper pre {
-  background-color: $code-block-background-color;
-  color: $code-block-color;
+:not(pre, figure) > code {
+  background: $code-linenumber-color; // Code Background
+  padding: $sp-1 $sp-2;
 }
 
 code,

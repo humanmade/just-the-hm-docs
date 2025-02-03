@@ -1,6 +1,6 @@
 @use "sass:math";
 
-@function rem($size, $unit: "") {
+@function rems($size, $unit: "") {
   $rem-size: $size * $root-font-size-rem-base;
 
   @if $unit == false {

@@ -1,9 +1,9 @@
-PATH
-  remote: .
+GIT
+  remote: https://github.com/humanmade/just-the-hm-docs.git
+  revision: 228e0e83ed318e820b837c179729f45643932929
   specs:
-    just-the-docs (0.10.1)
-      jekyll (>= 3.8.5)
-      jekyll-include-cache
+    just-the-hm-docs (1.0.2.rc1)
+      jekyll (>= 4.3.2)
       jekyll-seo-tag (>= 2.0)
       rake (>= 12.3.1)
 
@@ -39,6 +39,7 @@ GEM
     faraday-net_http (3.1.0)
       net-http
     ffi (1.17.1-arm64-darwin)
+    ffi (1.17.1-x86_64-darwin)
     ffi (1.17.1-x86_64-linux-gnu)
     fiber-annotation (0.2.0)
     fiber-local (1.1.0)
@@ -46,6 +47,9 @@ GEM
     fiber-storage (0.1.0)
     forwardable-extended (2.6.0)
     google-protobuf (4.29.3-arm64-darwin)
+      bigdecimal
+      rake (>= 13)
+    google-protobuf (4.29.3-x86_64-darwin)
       bigdecimal
       rake (>= 13)
     google-protobuf (4.29.3-x86_64-linux)
@@ -111,6 +115,8 @@ GEM
       uri
     nokogiri (1.18.1-arm64-darwin)
       racc (~> 1.4)
+    nokogiri (1.18.1-x86_64-darwin)
+      racc (~> 1.4)
     nokogiri (1.18.1-x86_64-linux-gnu)
       racc (~> 1.4)
     octokit (6.1.1)
@@ -137,6 +143,8 @@ GEM
     safe_yaml (1.0.5)
     sass-embedded (1.83.4-arm64-darwin)
       google-protobuf (~> 4.29)
+    sass-embedded (1.83.4-x86_64-darwin)
+      google-protobuf (~> 4.29)
     sass-embedded (1.83.4-x86_64-linux-gnu)
       google-protobuf (~> 4.29)
     sawyer (0.9.2)
@@ -157,17 +165,18 @@ GEM
 
 PLATFORMS
   arm64-darwin
+  x86_64-darwin-21
+  x86_64-darwin-24
   x86_64-linux-gnu
 
 DEPENDENCIES
   base64
-  bundler (>= 2.3.5)
   csv
   html-proofer (~> 5.0)
   jekyll-github-metadata (>= 2.15)
   jekyll-include-cache
   jekyll-sitemap
-  just-the-docs!
+  just-the-hm-docs!
 
 BUNDLED WITH
    2.5.9

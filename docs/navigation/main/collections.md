@@ -24,7 +24,7 @@ collections:
   tests:
     output: true
 
-just_the_docs:
+just_the_hm_docs:
   collections:
     tests:
       name: Tests
@@ -54,7 +54,7 @@ collections:
   tutorials:
     output: true
 
-just_the_docs:
+just_the_hm_docs:
   collections:
     tests:
       name: Tests

@@ -27,8 +27,8 @@ blockquote {
     &::before,
     &:is(.important-title) > p:first-child,
     &:is(.note-title) > p:first-child {
+      letter-spacing: rems(1);
       @include fs-3;
-      letter-spacing: 1px;
     }
   }
 }
