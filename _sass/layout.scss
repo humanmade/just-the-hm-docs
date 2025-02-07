@@ -2,12 +2,13 @@
 @use "sass:meta";
 
 :root {
-  --sidebar-width: #{rems($nav-width-md)};
+  --sidebar-width: max( var(--sidebar-content-width), calc(
+    (100% - #{rems($nav-width + $content-width)}) / 2 + #{rems($nav-width)}
+  ) );
+  --sidebar-content-width: #{rems($nav-width-md)};
 
   @include mq(lg) {
-    --sidebar-width: calc(
-      (100% - #{rems($nav-width + $content-width)}) / 2 + #{rems($nav-width)}
-    );
+    --sidebar-content-width: #{rems($nav-width)};
   }
 }
 
@@ -17,14 +18,12 @@ body {
   overflow-y: scroll;
 
   @include mq(md) {
-    display: grid;
-    grid-template-columns: rems($nav-width-md) 1fr;
-    position: static;
-    padding-bottom: 0;
-  }
-
-  @include mq(lg) {
-    grid-template-columns: minmax(rems($nav-width), var(--sidebar-width)) 1fr;
+    &:has( .side-bar ) {
+      display: grid;
+      grid-template-columns: var(--sidebar-width) 1fr;
+      position: static;
+      padding-bottom: 0;
+    }
   }
 }
 
@@ -35,31 +34,27 @@ body {
   background-color: $sidebar-color;
 
   @include mq(md) {
+    align-items: flex-end;
+    border-right: $border $border-color;
     flex-flow: column nowrap;
+    height: 100%;
     position: fixed;
     width: var(--sidebar-width);
-    height: 100%;
-    border-right: $border $border-color;
-    align-items: flex-end;
   }
 
-  @include mq(lg) {
-    min-width: rems($nav-width);
+  .site-nav, .site-header, .site-footer {
+    width: 100%;
+
+    @include mq(md) {
+      width: var(--sidebar-content-width);
+    }
   }
 
   & + .main {
     @include mq(md) {
-      margin-left: $nav-width-md;
-    }
-
-    @include mq(lg) {
-      // stylelint-disable function-name-case
-      // disable for Max(), we want to use the CSS max() function
-      margin-left: Max(
-        #{$nav-width},
-        calc((100% - #{$nav-width + $content-width}) / 2 + #{$nav-width})
-      );
-      // stylelint-enable function-name-case
+      grid-column-start: 2;
+      margin-left: 0;
+      max-width: min( rems($content-width), calc( 100vw - var(--sidebar-content-width) ) );
     }
 
     .main-header {
@@ -86,7 +81,6 @@ body {
   margin: auto;
 
   @include mq(md) {
-    grid-column-start: 2;
     position: relative;
     max-width: rems($content-width);
   }
@@ -122,16 +116,6 @@ body {
     @include mq(md) {
       display: flex;
     }
-  }
-}
-
-.site-nav,
-.site-header,
-.site-footer {
-  width: 100%;
-
-  @include mq(lg) {
-    width: rems($nav-width);
   }
 }
 
