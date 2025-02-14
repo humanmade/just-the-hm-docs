@@ -2,9 +2,12 @@
 @use "sass:meta";
 
 :root {
-  --sidebar-width: max( var(--sidebar-content-width), calc(
-    (100% - #{rems($nav-width + $content-width)}) / 2 + #{rems($nav-width)}
-  ) );
+  --sidebar-width: max(
+    var(--sidebar-content-width),
+    calc(
+      (100% - #{rems($nav-width + $content-width)}) / 2 + #{rems($nav-width)}
+    )
+  );
   --sidebar-content-width: #{rems($nav-width-md)};
 
   @include mq(lg) {
@@ -18,7 +21,7 @@ body {
   overflow-y: scroll;
 
   @include mq(md) {
-    &:has( .side-bar ) {
+    &:has(.side-bar) {
       display: grid;
       grid-template-columns: var(--sidebar-width) 1fr;
       position: static;
@@ -42,7 +45,9 @@ body {
     width: var(--sidebar-width);
   }
 
-  .site-nav, .site-header, .site-footer {
+  .site-nav,
+  .site-header,
+  .site-footer {
     width: 100%;
 
     @include mq(md) {
@@ -54,7 +59,10 @@ body {
     @include mq(md) {
       grid-column-start: 2;
       margin-left: 0;
-      max-width: min( rems($content-width), calc( 100vw - var(--sidebar-content-width) ) );
+      max-width: min(
+        rems($content-width),
+        calc(100vw - var(--sidebar-content-width))
+      );
     }
 
     .main-header {
